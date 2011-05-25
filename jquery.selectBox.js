@@ -384,8 +384,8 @@ if(jQuery) (function($) {
 									} else {
 										options.removeData('selectBox-down-at-x').removeData('selectBox-down-at-y');
 									}
-									selectOption(select, $(this).parent());
 									hideMenus();
+									selectOption(select, $(this).parent());
 								}).bind('mouseover.selectBox', function(event) {
 									addHover(select, $(this).parent());
 								})
