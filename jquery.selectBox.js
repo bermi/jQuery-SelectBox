@@ -593,9 +593,11 @@ if(jQuery) (function($) {
 			var removeHover = function(select, li) {
 				select = $(select);
 				li = $(li);
-				var control = select.data('selectBox-control'),
-					options = control.data('selectBox-options');
-				options.find('.selectBox-hover').removeClass('selectBox-hover');
+				var control = select.data('selectBox-control');
+				if(control !== undefined){
+					var options = control.data('selectBox-options');
+					options.find('.selectBox-hover').removeClass('selectBox-hover');
+				}
 			};
 			
 			
